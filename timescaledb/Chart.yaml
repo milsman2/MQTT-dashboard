@@ -1,11 +1,11 @@
 apiVersion: v2
-name: timescaledb-single
+name: timescaledb
 description: A Helm chart for Kubernetes
 type: application
 version: 0.1.0
 appVersion: "1.0"
 
 dependencies:
-- name: timescaledb
+- name: timescaledb-single
   version: 0.13.1
   repository: https://charts.timescale.com/timescale
