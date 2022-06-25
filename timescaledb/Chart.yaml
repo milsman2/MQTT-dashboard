@@ -8,4 +8,4 @@ appVersion: "1.0"
 dependencies:
 - name: timescaledb
   version: 0.13.1
-  repository: https://raw.githubusercontent.com/timescale/timescaledb-kubernetes/master/charts/repo/
+  repository: https://charts.timescale.com/timescale
