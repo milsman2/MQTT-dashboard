@@ -1,0 +1,29 @@
+image:
+  repository: eclipse-mosquitto
+  tag: 2.0.11
+  pullPolicy: IfNotPresent
+
+service:
+  main:
+    ports:
+      http:
+        enabled: false
+      mqtt:
+        enabled: true
+        port: 1883
+
+auth:
+  enabled: false
+
+# -- By enabling this, authentication and access control settings will be controlled on a per-listener basis
+perListenerSettings: false
+
+persistence:
+  data:
+    enabled: true
+    mountPath: /mosquitto/data
+  configinc:
+    enabled: true
+    mountPath: /mosquitto/configinc
+    accessMode: ReadWriteOnce
+    size: 100Mi
